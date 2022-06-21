@@ -2,7 +2,7 @@
 2) The details of 2 admins are already fed into the table.You can use the following username and passwords for checking admin related functions.
 
 username    Password
-emelie12	    Saturday123@
+emelie12	  Saturday123@
 john15      Sunday123#
 
 3) All the other users can register afresh.
