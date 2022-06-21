@@ -1,0 +1,16 @@
+1) The admins cannot register anew.
+2) The details of 2 admins are already fed into the table.You can use the following username and passwords for checking admin related functions.
+
+username    Password
+emelie12	    Saturday123@
+john15      Sunday123#
+
+3) All the other users can register afresh.
+4) All the passwords for the users are encrypted and stored.
+5) Initially 2 users are fed and registered in the system.
+
+lib_member details
+
+Username	    Password
+naina13	    Monday123@
+nimesh12    Tuesday456#
