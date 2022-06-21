@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    hold request
+{% endblock %}
+
+{% block main %}
+    <h2 id="fontf">Extension Successful</h2>
+    <div class="row justify-content-start">
+        <div class ="col-2"></div>
+        <div class ="col-8">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="h4" id="fontf">Issuedate</th>
+                     <th class="h4" id="fontf">Old extensiondate</th>
+                     <th class="h4" id="fontf">New extensiondate</th>
+                     <th class="h4" id="fontf">Old returndate</th>
+                     <th class="h4" id="fontf">New returndate</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                {% for value in result %}
+                   <tr>
+                        <td id="fontf">{{ value['issue_date'] }}</td>
+                        <td id="fontf">{{ value['old_extdate'] }}</td>
+                        <td id="fontf">{{ value['ext_date'] }}</td>
+                        <td id="fontf">{{ value['old_retdate'] }}</td>
+                        <td id="fontf">{{ value['ret_date'] }}</td>
+                   </tr>
+                {% endfor %}
+            </tbody>
+
+    </table>
+</div>
+</div>
+
+
+<div class="row">
+    <div class="col">
+        <form action="/display/member" method="post">
+            <class="container" style="padding-top:5%;">
+                <button class="btn btn-primary" type="submit">Close</button>
+            </class>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    book search
+{% endblock %}
+
+{% block main %}
+   <div class="row">
+
+    <div class="col">
+        <form action="/search_book" method="post">
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="ISBN" name="ISBN" placeholder="ISBN" type="text">
+            </div>
+            <div class="mb-3">
+                <input class="form-control mx-auto w-auto" id="author" name="author" placeholder="Author" type="text">
+            </div>
+            <div class="mb-3">
+                <input class="form-control mx-auto w-auto" id="Title" name="title" placeholder="Title" type="text">
+            </div>
+            <class="container" style="padding-top:5%;">
+                <button class="btn btn-primary" type="submit">Search</button>
+            </class>
+
+        </form>
+    </div>
+   </div>
+
+{% endblock %}

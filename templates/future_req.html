@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Future req
+{% endblock %}
+
+{% block main %}
+   <div class="row">
+
+    <div class="col">
+        <form action="/future_req" method="post">
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="ISBN" name="ISBN" placeholder="ISBN" type="text">
+            </div>
+            <class="container" style="padding-top:5%;">
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </class>
+
+        </form>
+    </div>
+   </div>
+
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Member summary
+{% endblock %}
+
+{% block main %}
+<div class="strip">
+    <div class="row justify-content-start">
+        <h3 id="fontf">User summary</h3>
+        <div class ="col-2 col-md-4 mb-1"></div>
+        <div class ="col-8 col-md-4 mb-1" style="padding-bottom:1%">
+            <a class="btn btn-primary btn-lg" style="width:100%;" href="/user_summary/on_hold">Books on hold</a>
+        </div>
+        <div class ="col-2 col-md-4 mb-1"></div>
+        <div class ="col-2 col-md-4 mb-1"></div>
+        <div class ="col-8 col-md-4 mb-1" style="padding-bottom:1%"">
+            <a class="btn btn-primary btn-lg" style="width:100%; padding-top:2%;" href="/user_summary/checked_out">Checked out books</a>
+        </div>
+        <div class ="col-2 col-md-4 mb-1"></div>
+        <div class ="col-2 col-md-4 mb-1"></div>
+        <div class ="col-8 col-md-4 mb-1" style="padding-bottom:1%">
+            <a class="btn btn-primary btn-lg" style="width:100%; padding-top:2%;" href="/user_summary/fut_hold">Books on future hold</a>
+        </div>
+        <div class ="col-2 col-md-4 mb-1"></div>
+        <div class ="col-2 col-md-4 mb-1"></div>
+        <div class ="col-8 col-md-4 mb-1" style="padding-bottom:1%"">
+            <a class="btn btn-primary btn-lg" style="width:100%; padding-top:2%;" href="/user_summary/penality">Penality</a>
+        </div>
+        <div class ="col-2 col-md-4 mb-1"></div>
+    </div>
+
+<div class="row justify-content-start">
+    <div class ="col-2 col-md-4 mb-1"></div>
+    <div class ="col-8 col-md-4 mb-1"></div>
+    <div class ="col-2 col-md-4 mb-1" style="padding-top:3%">
+        <a class="btn btn-primary btn-lg" style="padding-top:2%;" href="/display/member">Close</a>
+    </div>
+
+
+
+</div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+   <div class="row">
+
+    <div class="col">
+        <form action="/checkout" method="post">
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="ISBN" name="ISBN" placeholder="ISBN" type="text">
+            </div>
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="issue_id" name="issue_id" placeholder="issue_id" type="number">
+            </div>
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="copy_id" name="copy_id" placeholder="copy_id" type="number">
+            </div>
+            <class="container" style="padding-top:5%;">
+                <button class="btn btn-primary" type="submit">Checkout</button>
+            </class>
+
+        </form>
+    </div>
+   </div>
+
+{% endblock %}

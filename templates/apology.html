@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Apology
+{% endblock %}
+
+{% block main %}
+<form action={{value}} method="post">
+    <div class="row">
+        <div class="col">
+            <h3 id =fontf>{{ message }}</h3>
+        </div>
+    </div>
+    <div class = "row" style = "padding_top:3%">
+        <div class = "col">
+            <class="container" style="padding-top:5%;">
+                <button class="btn btn-primary" type="submit">Close</button>
+            </class>
+        </div>
+    </div>
+</form>
+
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    hold book success
+{% endblock %}
+
+{% block main %}
+    <h2 id="fontf">The overdue members are </h2>
+    <div class="row justify-content-start">
+        <div class ="col-2"></div>
+        <div class ="col-8">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="h4" id="fontf">Name</th>
+                     <th class="h4" id="fontf">Username</th>
+                     <th class="h4" id="fontf">Days overdue</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                {% for value in values %}
+                   <tr>
+                        <td id="fontf">{{ value['Name'] }}</td>
+                        <td id="fontf">{{ value['username'] }}</td>
+                        <td id="fontf">{{ value['days'] }}</td>
+
+                   </tr>
+                {% endfor %}
+            </tbody>
+
+    </table>
+</div>
+<div class ="col-2"></div>
+<div class ="col-2"></div>
+<div class ="col-8"></div>
+<div class ="col-2">
+    <a class="btn btn-primary" type="submit" href="/display/admin">Close</a>
+</div>
+    </class>
+    </div>
+   </div>
+
+{% endblock %}

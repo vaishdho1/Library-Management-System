@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    hold book success
+{% endblock %}
+
+{% block main %}
+    <h2 id="fontf">The books currently on hold</h2>
+    <div class="row justify-content-start">
+        <div class ="col-2"></div>
+        <div class ="col-8">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="h4" id="fontf">Issue_id</th>
+                    <th class="h4" id="fontf">Copy_id</th>
+                    <th class="h4" id="fontf">ISBN</th>
+                    <th class="h4" id="fontf">Title</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                {% for value in on_hold %}
+                   <tr>
+                        <td id="fontf">{{ value['issue_id'] }}</td>
+                        <td id="fontf">{{ value['copy_id'] }}</td>
+                        <td id="fontf">{{ value['ISBN'] }}</td>
+                        <td id="fontf">{{ value['Title'] }}</td>
+                   </tr>
+                {% endfor %}
+            </tbody>
+
+    </table>
+</div>
+<div class ="col-2"></div>
+<div class ="col-2"></div>
+<div class ="col-8"></div>
+<div class ="col-2">
+    <a class="btn btn-primary" type="submit" href="/summary">Close</a>
+</div>
+    </class>
+    </div>
+   </div>
+
+{% endblock %}

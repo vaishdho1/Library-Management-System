@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    hold book success
+{% endblock %}
+
+{% block main %}
+    <h3 id="fontf">The list of damaged books in the month of {{month}} for {{sub_name}}</h3>
+    <div class="row justify-content-start">
+        <div class ="col-2"></div>
+        <div class ="col-8">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="h4" id="fontf">ISBN</th>
+                     <th class="h4" id="fontf">Title</th>
+                     <th class="h4" id="fontf">Total</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                {% for value in values %}
+                   <tr>
+                        <td id="fontf">{{ value['ISBN'] }}</td>
+                        <td id="fontf">{{ value['Title'] }}</td>
+                        <td id="fontf">{{ value['total'] }}</td>
+
+                   </tr>
+                {% endfor %}
+            </tbody>
+
+    </table>
+</div>
+<div class ="col-2"></div>
+<div class ="col-2"></div>
+<div class ="col-8"></div>
+<div class ="col-2">
+    <a class="btn btn-primary" type="submit" href="/display/admin">Close</a>
+</div>
+    </class>
+    </div>
+   </div>
+
+{% endblock %}

@@ -1,0 +1,106 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+<style>
+    p.a {
+      text-align-last: center;
+    }
+</style>
+<form action="/register" method="post">
+<div class="container pt-6 pb-6 pb-md-10" style="max-width: 90%;">
+    <div class="strip">
+        <div class="row justify-content-start">
+            <div class ="col-12 col-md-4 mb-1">
+                <div class="mb-3">
+                    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="name" name="name" placeholder="Name" type="text">
+                </div>
+             </div>
+             <div class ="col-12 col-md-4 mb-1">
+                <div class="mb-3">
+                    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="username" placeholder="Username" type="text">
+                </div>
+
+            </div>
+            <div class ="col-12 col-md-4 mb-1">
+                <div class="mb-3">
+                    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="email" name="email" placeholder="Email" type="text">
+                </div>
+
+            </div>
+            <div class ="col-12 col-md-4 mb-1"style="padding-top:2%">
+                <div class="mb-3">
+                    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="department" name="department" placeholder="Department" type="text">
+                </div>
+
+            </div>
+            <div class ="col-12 col-md-4 mb-1"style="padding-top:2%">
+                <div class="mb-3">
+                    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="password" name="gender" placeholder="Gender(Female/Male)" type="text">
+            </div>
+
+
+            </div>
+            <div class ="col-12 col-md-4 mb-1"style="padding-top:2%">
+                <div class="mb-3">
+                    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="DOB" name="DOB" placeholder="DOB(yyyy-mm-dd)" type="text">
+                </div>
+
+            </div>
+            <div class ="col-12 col-md-4 mb-1"style="padding-top:1%;">
+                    <select class="form-select mx-auto w-auto"" name="type">
+                        <option disabled_selected>Choose:Faculty/Student</option>
+                        <option>Faculty</option>
+                        <option>Student</option>
+                    </select>
+            </div>
+            <div class ="col-12 col-md-4 mb-1">
+               <div class="mb-3"style="padding-top:3%">
+                   <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password">
+               </div>
+           </div>
+           <div class ="col-12 col-md-4 mb-1">
+           </div>
+            <div class ="col-12 col-md-4 mb-1">
+
+            </div>
+            <div class ="col-12 col-md-4 mb-1">
+               <div class="mb-3"style="padding-top:3%">
+                   <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="password" name="confirmation" placeholder="Re-type Password" type="password">
+               </div>
+           </div>
+           <div class ="col-12 col-md-4 mb-1">
+           </div>
+           <div class ="col-5 col-md-4 mb-1"></div>
+           <div class ="col-2 col-md-4 mb-1">
+                <button class="btn btn-primary" type="submit">Register</button>
+           </div>
+           <div class ="col-5 col-md-4 mb-1"></div>
+           <div class ="col-2 col-md-4 mb-1"></div>
+           <div id="one" class ="col-10 col-md-4 mb-1" style="text-align:left;font-family: playfair display,serif,-apple-system;
+           font-weight: 540;color: #8b3a3a; padding-top:1%">
+            <p class="text-left">
+                The password must be atleast 8 characters long.<br>
+                The password must be atleast 8 charactres long.<br>
+                The password must only start with a letter.<br>
+                The password must contain atleast one uppercase letter.<br>
+                The password should have atleast one digit.<br>
+                The password should have ateast one special character from the set (@_!#$%^&*).
+               </p>
+
+           </div>
+
+        </div>
+
+     </div>
+</div>
+</div>
+</form>
+
+
+
+
+{% endblock %}

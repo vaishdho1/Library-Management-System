@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    hold request
+{% endblock %}
+
+{% block main %}
+    <h2 id="fontf">Book result</h2>
+    <div class="row justify-content-start">
+        <div class ="col-2"></div>
+        <div class ="col-8">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="h4" id="fontf">ISBN</th>
+                     <th class="h4" id="fontf">Title</th>
+                     <th class="h4" id="fontf">Copies</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                {% for value in values %}
+                   <tr>
+                        <td id="fontf">{{value['ISBN']}}</td>
+                        <td id="fontf">{{value['Title']}}</td>
+                        <td id="fontf">{{value['bc_count']}}</td>
+                   </tr>
+                {% endfor %}
+            </tbody>
+
+    </table>
+</div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <form action="/hold_book" method="post">
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="ISBN" name="ISBN" placeholder="ISBN" type="text">
+            </div>
+
+            <class="container" style="padding-top:5%;">
+                <button class="btn btn-primary" type="submit">Hold</button>
+            </class>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <form action="/display/member" method="post">
+            <class="container" style="padding-top:5%;">
+                <button class="btn btn-primary" type="submit">Close</button>
+            </class>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
