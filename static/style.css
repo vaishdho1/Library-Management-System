@@ -1,0 +1,144 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+
+
+
+  .wrapper {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .row{
+    padding-top:2%;
+    padding-bottom:1%;
+  }
+  .col-sm-8{
+    padding-top :0.5%;
+    text-align:right;
+    font-size: 16px;
+    align-items: right;
+  }
+  .col-sm-7{
+    font-family: playfair display,serif,-apple-system;
+    font-weight: 540;
+    color: #8b3a3a;
+  }
+  .col-sm-2{
+    padding-top :0.5%;
+    text-align:right;
+    font-weight:bold;
+    font-size: 20px;
+  }
+  .header{
+    font-family: playfair display,serif,-apple-system;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f6f7ff;
+    padding 10px 0;
+    line-height: 1.3;
+    text-align: center;
+    background-color:#fce6de;
+
+  }
+  .btn-xl {
+    padding: 1rem 2rem
+}
+.btn-primary {
+  background-color: #8b3a3a !important;
+  border-color: #8b3a3a !important;
+}
+.btn-primary:hover {
+    background-color: #8a0000  !important;
+    border-color: #8b3a3a !important;
+}
+.btn-lg{
+
+}
+.page {
+  display: flex;
+  min-height: 90vh;
+  flex-direction: column;
+}
+.sub-footer {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background: #672b2b;
+  color: #fff;
+  text-align:right;
+}
+.sub-footer .copyright {
+  margin-top: 10px;
+  font-size: 14px;
+  margin-bottom:5px;
+}
+.footer {
+  background: #8b3a3a;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+  .inner{
+    display:inline-block;
+  }
+  .col-sm-10{
+    text-align:center;
+  }
+
+  #fontf{
+    font-family: playfair display,serif,-apple-system;
+    color: #8b3a3a;
+  }
+
+  .wrapper.container.row.col-sm-4.ul
+  {
+    display:inline;
+    list-style:none;
+  }
+  .main-menu{
+    display: block;
+  }
+  .menu-item{
+    list-style:none;
+    font-size:1.2rem;
+  }
+  .main_header
+  {
+    color: #8b3a3a;
+    font-family: playfair display,serif,-apple-system;
+  }
+  #one.col-8 col-md-4 mb-1
+  {
+    font-family: playfair display,serif,-apple-system;
+    font-weight: 540;
+    color: #8b3a3a;
+  }
+.d-inline p-2
+{
+  color:#8b3a3a;
+}
+  .link {
+    color: #8b3a3a;
+    text-decoration:none;
+    font-family:playfair display,serif,-apple-system; } /* CSS link color (red) */
+  .link:hover {
+    color: #612828;} /* CSS link hover (green) */
