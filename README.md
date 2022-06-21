@@ -26,6 +26,8 @@
 #### To create a database run the following command in the same folder:
 
 #### sqlite3 lib_mn.db -init Library_management.sql
+#### To run the application run the followingcommand from the current directory using python:
+#### flask run 
 #### This creates the database.
 #### Further details about the project are present in *Assumptions.txt* file
 
